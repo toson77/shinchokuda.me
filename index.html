@@ -18,15 +18,14 @@ h1 {
 	font-family: Yusei Magic;
 	font-size: 5rem;
 }
+
 .rotate span {
   display: inline-block;
+  animation: rotate-anime 2s ease-in-out infinite;
 }
 
-.rotate span:nth-child(even) {
-  transform: rotate(50deg);
-}
-.rotate span:nth-child(odd) {
-  transform: rotate(-50deg);
+@keyframes rotate-anime {
+ 100%{ transform: rotate(360deg) }
 }
  </style>
  <title>進捗どうですか</title>
